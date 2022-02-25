@@ -40,3 +40,4 @@ int main()
  output(n,prime);
  return 0;
 }
+  
