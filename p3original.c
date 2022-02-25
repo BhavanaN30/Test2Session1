@@ -9,7 +9,7 @@ int input_number()
 int is_prime(int n)
 {
   int prime,i;
-  for(i=1;i<n;i++);
+  for(i=1;i<n/2;i++);
  {
    if(n%i==0)
      {
@@ -19,8 +19,8 @@ int is_prime(int n)
      { 
        return 0;
      }
-    return prime;
  }
+  return prime;
 } 
   void output(int n,int is_prime)
 {
@@ -36,7 +36,7 @@ int main()
 {
  int n,prime;
  n=input_number();
- prime=is_prime(n);
+ is_prime(n);
  output(n,prime);
  return 0;
 }
